@@ -1,0 +1,64 @@
+<div class="container-fluid main">
+    <div class="page-header">
+        <h1>Angular Highlightjs Searchtext marker demo.</h1>
+        <h5>
+           Select the code's language and paste your code.
+        </h5>
+    </div>
+    <div class="">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" ng-model="vm.searchtext" class="form-control" placeholder="search text here..">
+                </div>
+                <div class="col-md-4">
+                    <div class="input-group">
+
+                        <div uib-dropdown class="input-group-btn">
+                            <button id="split-button" type="button" class="btn btn-success" uib-dropdown-toggle><span
+                                    class="caret"></span></button>
+                            <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
+                                <li role="menuitem" ng-repeat="lang in vm.languageList">
+                                    <a ng-click="vm.changeLang(lang)">{{lang}}</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" ng-model="vm.language" class="form-control"
+                               placeholder="Select language here.." readonly>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="checkbox">
+                        <label>
+                            <input ng-model="vm.isLineNumber" type="checkbox"> Display Line Number
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel">
+                    <div class="panel-body">
+                        <textarea ng-model="vm.code" class="code-input-area" placeholder="your code snippet"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel">
+                    <div class="panel-heading">Highlighted Result</div>
+                    <div class="panel-body">
+                        <div>
+                            <hljs-search code="vm.code" language="vm.language" searchtext="vm.searchtext"
+                                         linenumber="vm.isLineNumber"></hljs-search>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
