@@ -1,10 +1,26 @@
 .main{
-  background-color:#F5F7FA;
-  margin-top: 10px;
+  background-color:#FFF;;
+  margin-top:120px;
 }
 .code-input-area{
   height:200px;
   width:100%;
   overflow: auto;
   border: 1px #F5F7FA solid;
+}
+
+
+
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  right: 0;
+  opacity: 0.9;
+  background-color: #434A54;
+  padding:5px;
+  border-bottom:1px solid #E6E9ED;
+  color:#fff;
+  margin-bottom:5%;
+  z-index: 1000;
 }

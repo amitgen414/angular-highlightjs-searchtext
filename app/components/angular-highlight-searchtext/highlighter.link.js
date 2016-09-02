@@ -11,7 +11,7 @@ let highlighterLink = function (scope, element) {
     (function (hljs) {
 
         scope.$watch('code', function (newVal) {
-            _code = newVal || ' ';
+            _code = newVal;
             codeProcessor();
         });
         scope.$watch('searchtext', function (newVal) {

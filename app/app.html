@@ -1,10 +1,11 @@
+<div class="header">
+    <h3>Angular Highlight JS Search Text marker demo.</h3>
+    <h5>
+        Select the code's language and paste your code.
+    </h5>
+</div>
 <div class="container-fluid main">
-    <div class="page-header">
-        <h1>Angular Highlightjs Searchtext marker demo.</h1>
-        <h5>
-           Select the code's language and paste your code.
-        </h5>
-    </div>
+
     <div class="">
         <div class="panel-body">
             <div class="row">
@@ -15,7 +16,7 @@
                     <div class="input-group">
 
                         <div uib-dropdown class="input-group-btn">
-                            <button id="split-button" type="button" class="btn btn-success" uib-dropdown-toggle><span
+                            <button id="split-button" type="button" class="btn btn-primary" uib-dropdown-toggle><span
                                     class="caret"></span></button>
                             <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
                                 <li role="menuitem" ng-repeat="lang in vm.languageList">
@@ -39,7 +40,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <div class="panel">
+                <div class="panel panel-default">
                     <div class="panel-body">
                         <textarea ng-model="vm.code" class="code-input-area" placeholder="your code snippet"></textarea>
                     </div>
@@ -48,10 +49,10 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="panel">
-                    <div class="panel-heading">Highlighted Result</div>
+                <div class="panel panel-default" >
                     <div class="panel-body">
-                        <div>
+                        <div >
+                            <h3 class="text-center text-muted" ng-show="!(vm.code && vm.language)">Highlighted result will be here !</h3>
                             <hljs-search code="vm.code" language="vm.language" searchtext="vm.searchtext"
                                          linenumber="vm.isLineNumber"></hljs-search>
                         </div>

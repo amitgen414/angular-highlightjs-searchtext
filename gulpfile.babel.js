@@ -186,7 +186,7 @@ gulp.task('webServer', function () {
         .on('change', function (file) {
             console.info('Changed:' + file.path);
         });
-    gulp.watch(config.root + '/**/*.scss', ["compileAppSaas"])
+    gulp.watch(config.root + '/**/*.scss', ["compileAppSaas" ,"compileVendorSaas"])
         .on('change', function (file) {
             console.log('Changed:' + file.path);
         });
