@@ -1,4 +1,4 @@
-angular-highlightjs-search
+angular-highlightjs-searchtext
 ========================
 
 An angular JS directive for highlighting the code with line numbers and searching a required keyword.
