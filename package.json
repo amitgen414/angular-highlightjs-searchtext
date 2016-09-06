@@ -1,7 +1,7 @@
 {
   "name": "angular-highlightjs-searchtext",
-  "version": "0.0.1",
-  "description": "An angular JS directive for highlighting the code with line numbers and searching a required keyword.",
+  "version": "0.0.4",
+  "description": "An angular JS directive for code syntax highlighting using HighlightJS with added line numbers and keyword searching functionality.",
   "main": "index.js",
   "repository": {
     "type": "git",

@@ -28,7 +28,7 @@ var config = {
     bootstrap: 'bower_components/bootstrap-sass/assets',
     appResources: 'app/resources/app',
     vendorResources: 'app/resources/vendor',
-    appName: 'angular-higlightjs-searchtext',
+    appName: 'angular-highlightjs-searchtext',
     scriptRelease: 'build',
     scriptMainPath: '/components/angular-highlight-searchtext/highlighter.js'
 

@@ -1,7 +1,7 @@
 angular-highlightjs-searchtext
 ========================
 
-An angular JS directive for code syntax highlighting using [HighlightJS](https://highlightjs.org/) with added line numbers and keyword searching functionality
+An angular JS directive for code syntax highlighting using [HighlightJS](https://highlightjs.org/) with added line numbers and keyword searching functionality.
 
 ##Demo
 https://amitgen414.github.io/angular-highlightjs-searchtext
