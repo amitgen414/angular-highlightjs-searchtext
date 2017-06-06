@@ -70,7 +70,6 @@ it supports two way data binding. Hence as soon a any of the parameter value cha
 ```html
 <!--angular-highlightjs-searchtext setup -->
  <hljs-search code="code" language="language" searchtext="searchtext"  linenumber="isLineNumber"></hljs-search>
-</div>
 ```
 
 ## Customization
